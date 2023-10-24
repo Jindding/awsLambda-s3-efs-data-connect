@@ -21,5 +21,15 @@ This function was developed to enable Windows PC users to upload or delete files
 
 ## Test Cases
 
-(List the test cases relevant to this feature)
-
+| Feature                                    | Feasible | Remarks                                      |
+|--------------------------------------------|----------|----------------------------------------------|
+| Single File Upload                         |    :white_check_mark:     |                                              |
+| Multiple File Upload                       |    :white_check_mark:     |                                              |
+| Korean File Name Upload                    |    :white_check_mark:     |                                              |
+| File and Directory Name Change             |    :white_check_mark:     |                                              |
+| Create New Directory                       |    :white_check_mark:     |                                              |
+| Upload Files with Special Characters (e.g., (),./-) |    :white_check_mark:     |                                              |
+| Large File Upload (10.4 MB)                |    :white_check_mark:     |                                              |
+| Large File Multiple Upload (15x 10.4MB files simultaneously) |    :white_check_mark:     |                                              |
+| Custom Extension Handling (jpg, png, gif)  |    :x:     | Extension handling via S3 triggers using prefixes is possible, but development is planned within the Lambda function for handling multiple extensions. |
+| File and Directory Deletion Test           |    :white_check_mark:     |                                              |
